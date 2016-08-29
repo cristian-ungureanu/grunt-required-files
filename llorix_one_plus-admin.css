@@ -1,0 +1,404 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+
+/***********************************/
+/***** Sections order control ******/
+/***********************************/
+
+
+.llorix_one_plus_order li {
+	width: 95%;
+	display: block;
+	background-color: #FFFFFF;
+	margin-bottom: 10px;
+	padding: 10px;
+	color: #008ED6;
+	cursor: move;
+	border: 1px solid #dfdfdf;
+	font-weight: bold;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.llorix_one_shake.ui-sortable-helper {
+	background-color: rgba(255, 255, 255, 0.8)!important;
+}
+
+@-webkit-keyframes spaceboots {
+	0% {
+		-webkit-transform: translate(0px, 0px) rotate(0deg);
+	}
+	0% {
+		-webkit-transform: translate(2px, 1px) rotate(0deg);
+	}
+	10% {
+		-webkit-transform: translate(-1px, -2px) rotate(-1deg);
+	}
+	20% {
+		-webkit-transform: translate(-3px, 0px) rotate(1deg);
+	}
+	30% {
+		-webkit-transform: translate(0px, 2px) rotate(0deg);
+	}
+	40% {
+		-webkit-transform: translate(1px, -1px) rotate(1deg);
+	}
+	50% {
+		-webkit-transform: translate(-1px, 2px) rotate(-1deg);
+	}
+	60% {
+		-webkit-transform: translate(-3px, 1px) rotate(0deg);
+	}
+	70% {
+		-webkit-transform: translate(2px, 1px) rotate(-1deg);
+	}
+	80% {
+		-webkit-transform: translate(-1px, -1px) rotate(1deg);
+	}
+	90% {
+		-webkit-transform: translate(2px, 2px) rotate(0deg);
+	}
+	100% {
+		-webkit-transform: translate(1px, -2px) rotate(-1deg);
+	}
+}
+
+.llorix_one_shake {
+	-webkit-animation-name: spaceboots;
+	-webkit-animation-duration: 1.5s;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+.llorix_one_shake:nth-child(even) {
+	-webkit-animation-delay: 0.2s;
+	/* Chrome, Safari, Opera */
+	animation-delay: 0.2s;
+}
+
+.ui-sortable-placeholder {
+	border: 2px dashed #0590D6!important;
+	visibility: visible!important;
+}
+
+.llorix_one_plus_default {
+	background-color: #008ED6;
+	color: #ffffff;
+	width: 100%;
+	border: 1px solid #dfdfdf;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	transition: background-color 0.5s ease;
+}
+
+.llorix_one_plus_default:hover {
+	background-color: #ffffff;
+	color: #008ED6;
+	width: 100%;
+	border: 1px solid #008ED6;
+}
+
+.llorix_one_plus_go_to_section {
+	float: right;
+	background-color: #fff;
+	border: 1px solid #008ED6;
+	border-radius: 4px;
+	color: #008ED6;
+	cursor: pointer;
+	transition: background-color 0.5s ease;
+}
+
+.llorix_one_plus_go_to_section:hover {
+	color: #fff;
+	background-color: #008ED6;
+}
+
+
+/* END Section Order Control*/
+
+.llorix_one_plus-image-picker li {
+	display: inline-block;
+	margin-right: 7px;
+	cursor: pointer;
+}
+
+.llorix_one_plus-image-picker li:nth-child(even) {
+	margin-right: 0px
+}
+
+
+
+/***********************************/
+/***** Palette picker control ******/
+/***********************************/
+
+
+#customize-control-metro_customizr_contact_form_shortcode {
+	display: none;
+}
+
+.metro_customizr_radio_control {
+	margin-top: 0;
+}
+
+.metro_customizr_general_control_repeater_container .metrox-box-content-hidden {
+	padding-top: 5px;
+}
+
+.llorix_one_plus_palette_picker li span {
+	width: 43px;
+	height: 40px;
+	display: inline-block;
+}
+
+.llorix_one_plus_palette_input {
+	border: 1px solid #cfcfcf;
+	width: 209px;
+	height: 40px;
+	float: left;
+	line-height: 40px;
+	font-size: 16px;
+	padding: 5px;
+	cursor: pointer;
+	background-color: #FFFFFF;
+}
+
+.llorix_one_plus_palette_input span {
+	display: block;
+	height: 40px;
+	float: left;
+	width: 40px;
+}
+
+.llorix_one_plus_dropdown {
+	width: 20px;
+	height: 50px;
+	font-size: 20px;
+	float: left;
+	border: 1px solid #cfcfcf;
+	text-align: center;
+	border-left: 0px;
+	cursor: pointer;
+	line-height: 50px;
+	background-color: #00a5f9;
+	color: #FFFFFF;
+	font-size: 12px;
+}
+
+.llorix_one_plus_dropdown span {
+	line-height: 50px;
+}
+
+.llorix_one_plus_palette_picker {
+	clear: both;
+	text-align: center;
+	padding-top: 6px;
+	border: 1px solid #cfcfcf;
+	border-top: 0px;
+	display: none;
+	width: 240px;
+	background-color: #fff;
+}
+
+.llorix_one_plus_palette_picker li span {
+	cursor: pointer;
+}
+
+.llorix_one_plus_pallete_default {
+	line-height: 40px;
+	cursor: pointer;
+}
+
+
+/***********************************/
+/*************** Tour **************/
+/***********************************/
+
+
+.llorix_one_hide_tour {
+	display: none;
+}
+
+.themeisle-tab-background {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.4);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.themeisle-tab-wrap-all {
+	margin: auto;
+	float: none;
+	max-width: 800px;
+	margin-top: 40%;
+	padding: 10px;
+}
+
+.themeisle-tab-wrap-all .themeisle-tab-wrap {
+	margin-top: -50%;
+}
+
+/* menu */
+
+.themeisle-tab-menu-wrap ul {
+	margin: 0;
+	padding: 0;
+}
+
+.themeisle-tab-menu-wrap ul li {
+	list-style: none
+}
+
+.themeisle-tab-menu-wrap ul a {
+	float: left;
+	width: 100%;
+	color: #FFF;
+	text-decoration: none;
+	padding: 10px 0;
+	border-bottom: 1px solid rgba(115, 208, 255, 0.28);
+	border-top: 1px solid rgba(0, 71, 107, 0.2);
+}
+
+.themeisle-tab-menu-wrap ul li:first-child a {
+	border-top: none;
+}
+
+.themeisle-tab-menu-wrap ul li a:hover {
+	background: rgba(255, 255, 255, .9);
+	color: #008ed6;
+}
+
+.themeisle-tab-menu-wrap ul a span {
+	padding: 0 10px;
+}
+
+
+/* content */
+
+.themeisle-tab-wrap {
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 20px;
+	float: left;
+	width: 800px;
+	max-width: 100%;
+	font-size: 14px;
+	background-color: #008ed6;
+	border: 1px solid #D6D6D6;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 2px 3px 3px 0px rgba(50, 50, 50, 0.1);
+	-moz-box-shadow: 2px 3px 3px 0px rgba(50, 50, 50, 0.1);
+	box-shadow: 2px 3px 3px 0px rgba(50, 50, 50, 0.1);
+	overflow: hidden;
+}
+
+.themeisle-tab-wrap img {
+	max-width: 100%
+}
+
+.themeisle-tab-menu-wrap {
+	float: left;
+	width: 200px;
+}
+
+.themeisle-tab-content-wrap {
+	margin-left: -200px;
+	width: 100%;
+	float: right;
+	overflow: hidden;
+}
+
+.themeisle-tab-content-inner {
+	margin-left: 200px;
+}
+
+.themeisle-tab-content {
+	padding: 15px;
+	display: none;
+	background: #FFF;
+	min-height: 350px;
+	position: relative;
+	padding-bottom: 55px;
+}
+
+.themeisle-tab-content.themeisle-tab-show {
+	display: block;
+	overflow: auto;
+}
+
+.themeisle-tab-menu-wrap ul li a.themeisle-tab-show,
+.themeisle-tab-menu-wrap ul li a.themeisle-tab-show:hover {
+	color: #008ed6;
+	background: #FFF;
+}
+
+.themeisle-tab-title {
+	font-size: 22px;
+	color: #008ED6;
+	font-weight: bold;
+	line-height: 30px;
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+.themeisle-tab-button {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 12px;
+	line-height: 1.6;
+	border: none;
+	padding: 12px 25px 10px 25px;
+	color: #ffffff;
+	-webkit-transition: none;
+	transition: none;
+	background-color: #00a5f9;
+	background-size: contain;
+	-webkit-box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.3);
+	text-decoration: none;
+	display: inlone-block;
+	float: right;
+	margin: 0 10px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+.themeisle-tab-button:hover {
+	opacity: 0.8;
+	color:#ffffff;
+}
+
+.tour_content{
+	height: 300px;
+    overflow-y: scroll;
+}
+
+
+
+
+
+#accordion-section-llorix_one_lite_shop_section .accordion-section-title, #accordion-section-llorix_one_lite_sections_order .accordion-section-title, #accordion-section-llorix_one_lite_features_ribbon_section .accordion-section-title, #accordion-section-llorix_one_lite_portfolio_section .accordion-section-title, #accordion-section-llorix_one_lite_shortcodes_section .accordion-section-title, #accordion-section-llorix_one_lite_new_features .accordion-section-title {
+	background-image:none!important;
+}
+
+#accordion-section-llorix_one_lite_shop_section .accordion-section-title:after, #accordion-section-llorix_one_lite_sections_order .accordion-section-title:after, #accordion-section-llorix_one_lite_features_ribbon_section .accordion-section-title:after, #accordion-section-llorix_one_lite_portfolio_section .accordion-section-title:after, #accordion-section-llorix_one_lite_shortcodes_section .accordion-section-title:after, #accordion-section-llorix_one_lite_new_features .accordion-section-title:after {
+	content: "\f345"!important;	
+}
+
+.llorix-one-lite-upgrade-to-pro-button {
+	display:none !important;
+}
+
